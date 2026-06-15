@@ -1,0 +1,257 @@
+{
+  "meta": {
+    "title": "Client Factory | Acquisition Clients & Génération de Leads au Maroc",
+    "description": "Client Factory accompagne les entreprises dans l'acquisition de nouveaux clients grâce à l'étude de marché, la stratégie marketing, la création de contenu et la publicité digitale.",
+    "keywords": "acquisition clients, génération de leads, marketing digital, publicité digitale, croissance entreprise, Maroc"
+  },
+  "nav": {
+    "home": "Accueil",
+    "process": "Notre méthode",
+    "services": "Services",
+    "about": "À propos",
+    "faq": "FAQ",
+    "contact": "Contact"
+  },
+  "header": {
+    "cta": "Consultation gratuite"
+  },
+  "hero": {
+    "badge": "Système d'Acquisition Client",
+    "headline": "Transformez votre entreprise en machine à générer des clients",
+    "subheadline": "Nous analysons votre marché, construisons votre stratégie, gérons vos campagnes publicitaires et transformons les prospects en clients.",
+    "ctaPrimary": "Obtenir une consultation gratuite",
+    "ctaSecondary": "Voir notre méthode",
+    "stats": ["Clients ciblés", "Croissance continue", "Résultats rapides"]
+  },
+  "problem": {
+    "title": "Faites-vous face à ces problèmes ?",
+    "subtitle": "La plupart des entreprises perdent du chiffre d'affaires chaque mois à cause de ces problèmes courants.",
+    "items": [
+      {
+        "title": "Des publicités qui ne génèrent pas de clients",
+        "desc": "Un budget publicitaire dépensé sans réel retour sur investissement."
+      },
+      {
+        "title": "Aucune stratégie marketing claire",
+        "desc": "Des campagnes lancées au hasard, sans plan ni objectifs mesurables."
+      },
+      {
+        "title": "Taux de conversion faibles",
+        "desc": "Vous perdez la majorité des prospects pourtant intéressés par votre activité."
+      },
+      {
+        "title": "Dépendance aux recommandations",
+        "desc": "Une source de clients imprévisible, impossible à développer durablement."
+      },
+      {
+        "title": "Chiffre d'affaires imprévisible",
+        "desc": "Des ventes qui fluctuent chaque mois, rendant toute planification quasi impossible."
+      }
+    ]
+  },
+  "method": {
+    "title": "La méthode Client Factory",
+    "subtitle": "Notre système éprouvé en 6 étapes pour construire votre machine à clients.",
+    "steps": [
+      {
+        "number": "01",
+        "title": "Étude de marché et concurrence",
+        "desc": "Nous analysons le marché au Maroc et à l'international, identifions les opportunités et cartographions forces et faiblesses."
+      },
+      {
+        "number": "02",
+        "title": "Stratégie d'acquisition",
+        "desc": "Nous construisons une stratégie marketing sur mesure, alignée avec votre activité et vos nouveaux objectifs de croissance."
+      },
+      {
+        "number": "03",
+        "title": "Production de contenu",
+        "desc": "Nous produisons des contenus publicitaires et commerciaux professionnels qui captent et convainquent votre audience cible."
+      },
+      {
+        "number": "04",
+        "title": "Publicité payante",
+        "desc": "Nous lançons et gérons des campagnes ciblées sur les plateformes les plus performantes pour maximiser les résultats."
+      },
+      {
+        "number": "05",
+        "title": "Génération de leads",
+        "desc": "Nous dirigeons les prospects intéressés vers des pages à fort taux de conversion, récupérons leurs données et les qualifions."
+      },
+      {
+        "number": "06",
+        "title": "Conversion en ventes",
+        "desc": "Nous accompagnons le suivi des prospects avec votre équipe pour conclure les ventes et transformer le pipeline en chiffre d'affaires réel."
+      }
+    ]
+  },
+  "whyUs": {
+    "title": "Pourquoi Client Factory ?",
+    "items": [
+      {
+        "title": "Approche Data Driven",
+        "desc": "Chaque décision est basée sur une véritable étude de marché et des données de performance."
+      },
+      {
+        "title": "Système Full Funnel",
+        "desc": "Du premier clic à la signature — nous gérons l'intégralité de votre tunnel d'acquisition."
+      },
+      {
+        "title": "Croissance prévisible",
+        "desc": "Nous construisons un moteur d'acquisition client reproductible, que vous pouvez développer dans le temps."
+      }
+    ]
+  },
+  "results": {
+    "title": "Des résultats qui parlent d'eux-mêmes",
+    "stats": [
+      {
+        "value": "5000",
+        "suffix": "+",
+        "label": "Leads générés",
+        "sub": "Nous avons aidé nos clients à générer des milliers de prospects qualifiés."
+      },
+      {
+        "value": "300",
+        "suffix": "+",
+        "label": "Campagnes gérées",
+        "sub": "Des campagnes publicitaires réussies dans de nombreux secteurs."
+      },
+      {
+        "value": "95",
+        "suffix": "%",
+        "label": "Satisfaction client",
+        "sub": "Le taux de satisfaction de nos clients vis-à-vis de nos résultats."
+      }
+    ]
+  },
+  "caseStudies": {
+    "title": "Études de cas",
+    "subtitle": "Des résultats concrets pour des entreprises réelles.",
+    "challengeLabel": "Défi",
+    "solutionLabel": "Solution",
+    "resultLabel": "Résultat",
+    "items": [
+      {
+        "industry": "Immobilier",
+        "company": "Agence immobilière à Casablanca",
+        "challenge": "Manque de prospects qualifiés",
+        "solution": "Stratégie publicitaire + pages de conversion professionnelles",
+        "result": "+120% de prospects en 3 mois"
+      },
+      {
+        "industry": "Éducation",
+        "company": "Centre de formation à Rabat",
+        "challenge": "Faible taux d'inscriptions",
+        "solution": "Contenu publicitaire ciblé",
+        "result": "+85% d'inscriptions en 2 mois"
+      },
+      {
+        "industry": "Services",
+        "company": "Entreprise de services à Marrakech",
+        "challenge": "Ventes instables",
+        "solution": "Système d'acquisition client complet",
+        "result": "Croissance des ventes de +150% en 4 mois"
+      }
+    ]
+  },
+  "form": {
+    "title": "Obtenez votre consultation gratuite",
+    "subtitle": "Réservez un appel gratuit avec l'un de nos experts pour analyser votre activité et découvrir vos opportunités de croissance.",
+    "benefits": [
+      "Analyse gratuite de votre activité",
+      "Plan d'action initial personnalisé",
+      "Recommandations concrètes et applicables"
+    ],
+    "steps": {
+      "1": "Coordonnées",
+      "2": "Votre entreprise",
+      "3": "Défis",
+      "4": "Budget",
+      "5": "Description du projet",
+      "6": "Réserver un créneau"
+    },
+    "fields": {
+      "fullName": "Nom complet",
+      "email": "Adresse e-mail",
+      "phone": "Numéro de téléphone",
+      "companyName": "Nom de l'entreprise",
+      "website": "Site web (facultatif)",
+      "industry": "Secteur d'activité",
+      "challengeLabel": "Quel est votre plus grand défi ?",
+      "challengeOptions": ["Génération de leads", "Ventes", "Marketing", "Image de marque", "Autre"],
+      "budgetLabel": "Budget marketing mensuel prévu",
+      "budgetOptions": [
+        "Moins de 5 000 MAD",
+        "5 000 - 10 000 MAD",
+        "10 000 - 30 000 MAD",
+        "30 000 - 50 000 MAD",
+        "Plus de 50 000 MAD"
+      ],
+      "descriptionLabel": "Parlez-nous de votre projet",
+      "descriptionPlaceholder": "Décrivez votre activité, vos objectifs et ce que vous souhaitez accomplir..."
+    },
+    "errors": {
+      "required": "Ce champ est obligatoire",
+      "invalidEmail": "Veuillez saisir une adresse e-mail valide",
+      "invalidPhone": "Veuillez saisir un numéro de téléphone valide"
+    },
+    "buttons": {
+      "next": "Suivant",
+      "back": "Retour",
+      "submit": "Envoyer"
+    },
+    "calendar": {
+      "title": "Choisissez une date et un horaire",
+      "day": "Jour",
+      "time": "Heure",
+      "timezone": "Fuseau horaire"
+    },
+    "confirmation": {
+      "title": "Merci !",
+      "message": "Notre équipe vous contactera très prochainement pour confirmer votre rendez-vous."
+    }
+  },
+  "faq": {
+    "title": "Questions fréquentes",
+    "items": [
+      {
+        "q": "Garantissez-vous des résultats ?",
+        "a": "Bien que nous ne puissions pas garantir des chiffres précis en raison des variables du marché, notre système éprouvé est conçu pour maximiser votre retour sur investissement, et nous optimisons en continu les campagnes sur la base de données réelles."
+      },
+      {
+        "q": "Avec quelles plateformes travaillez-vous ?",
+        "a": "Nous travaillons avec Meta Ads (Facebook & Instagram), Google Ads, TikTok Ads et LinkedIn Ads, en choisissant les plateformes les plus adaptées à votre audience et à vos objectifs."
+      },
+      {
+        "q": "Combien de temps faut-il pour voir des résultats ?",
+        "a": "La plupart des clients commencent à voir leurs premiers prospects dans les 2 à 4 semaines, avec une croissance significative généralement visible après 2 à 3 mois d'optimisation continue."
+      },
+      {
+        "q": "Quel budget est nécessaire pour démarrer ?",
+        "a": "Nous travaillons avec des entreprises de différents niveaux de budget, à partir de 5 000 MAD/mois pour les dépenses publicitaires, en plus de nos honoraires de gestion."
+      },
+      {
+        "q": "Comment se déroulent la communication et les rapports ?",
+        "a": "Vous recevrez des rapports de performance réguliers et disposerez d'un point de contact dédié via WhatsApp, e-mail ou appels."
+      },
+      {
+        "q": "Ai-je besoin d'un site web ?",
+        "a": "Pas nécessairement. Nous pouvons créer pour vous des pages d'atterrissage à fort taux de conversion dans le cadre de notre service, même si vous n'avez pas encore de site complet."
+      }
+    ]
+  },
+  "finalCta": {
+    "title": "Prêt à construire votre machine à clients ?",
+    "subtitle": "Arrêtez de compter sur la chance. Construisez un système prévisible qui vous apporte des clients chaque mois.",
+    "button": "Réservez votre session stratégique gratuite"
+  },
+  "footer": {
+    "tagline": "Nous construisons votre machine à clients.",
+    "contactTitle": "Contactez-nous",
+    "linksTitle": "Liens rapides",
+    "followTitle": "Suivez-nous",
+    "address": "Casablanca, Maroc",
+    "rights": "© 2026 Client Factory. Tous droits réservés."
+  }
+}

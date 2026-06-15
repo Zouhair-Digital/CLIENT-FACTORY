@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 360 96" role="img" aria-labelledby="clientFactoryLogoTitle">
+  <title id="clientFactoryLogoTitle">Client Factory</title>
+  <path d="M74 18a38 38 0 1 0 0 60" fill="none" stroke="#FFFFFF" stroke-width="14" stroke-linecap="round"/>
+  <path d="M50 16h72v20H82v18h44v18H82v18H50V16Z" fill="#D4AF37"/>
+  <text x="140" y="36" fill="#FFFFFF" font-family="Inter, sans-serif" font-weight="700" font-size="24" letter-spacing="0.25em">CLIENT</text>
+  <text x="140" y="74" fill="#D4AF37" font-family="Inter, sans-serif" font-weight="600" font-size="18" letter-spacing="0.3em">FACTORY</text>
+  <rect x="124" y="68" width="30" height="4" rx="2" fill="#D4AF37" />
+  <rect x="250" y="68" width="30" height="4" rx="2" fill="#D4AF37" />
+</svg>

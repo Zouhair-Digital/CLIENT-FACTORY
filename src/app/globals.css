@@ -1,0 +1,130 @@
+@import "tailwindcss";
+
+:root {
+  --color-navy: #071b34;
+  --color-navy-light: #0e2d52;
+  --color-navy-dark: #04101f;
+  --color-gold: #d4af37;
+  --color-gold-light: #f1d978;
+}
+
+@theme inline {
+  --color-navy: var(--color-navy);
+  --color-navy-light: var(--color-navy-light);
+  --color-navy-dark: var(--color-navy-dark);
+  --color-gold: var(--color-gold);
+  --color-gold-light: var(--color-gold-light);
+  --font-poppins: var(--font-poppins);
+  --font-inter: var(--font-inter);
+  --font-cairo: var(--font-cairo);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-navy);
+  color: #ffffff;
+  font-family: var(--font-inter), sans-serif;
+}
+
+[dir="rtl"] body,
+[dir="rtl"] {
+  font-family: var(--font-cairo), var(--font-inter), sans-serif;
+}
+
+.font-display {
+  font-family: var(--font-poppins), sans-serif;
+}
+
+[dir="rtl"] .font-display {
+  font-family: var(--font-cairo), var(--font-poppins), sans-serif;
+}
+
+::selection {
+  background: var(--color-gold);
+  color: var(--color-navy);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-navy-dark);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color-gold);
+  border-radius: 999px;
+}
+
+/* Gold gradient text */
+.text-gradient-gold {
+  background: linear-gradient(135deg, #f1d978 0%, #d4af37 50%, #b8860b 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+/* Animated growth lines background */
+.growth-lines {
+  position: absolute;
+  inset: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.growth-lines svg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.growth-lines path {
+  stroke-dasharray: 12 8;
+  animation: dash-flow 30s linear infinite;
+}
+
+@keyframes dash-flow {
+  to {
+    stroke-dashoffset: -1000;
+  }
+}
+
+@keyframes float-glow {
+  0%,
+  100% {
+    transform: translateY(0px);
+    opacity: 0.5;
+  }
+  50% {
+    transform: translateY(-20px);
+    opacity: 0.9;
+  }
+}
+
+.animate-float-glow {
+  animation: float-glow 6s ease-in-out infinite;
+}
+
+/* Section heading underline accent */
+.heading-accent {
+  position: relative;
+  display: inline-block;
+}
+
+.heading-accent::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 60px;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, var(--color-gold), transparent);
+  border-radius: 999px;
+}
