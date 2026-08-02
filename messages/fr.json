@@ -102,6 +102,17 @@
       }
     ]
   },
+  "webService": {
+    "badge": "Nouveau service",
+    "title": "Un site web qui convertit vos visiteurs en clients",
+    "subtitle": "En plus de vos campagnes publicitaires, nous concevons des sites web professionnels, rapides et optimisés pour la conversion — pensés pour transformer chaque visite en opportunité commerciale.",
+    "features": [
+      "Design sur mesure aligné à votre image de marque",
+      "Optimisé pour la conversion et la génération de leads",
+      "Rapide, responsive et compatible avec tous les appareils"
+    ],
+    "cta": "Découvrir plus de détails"
+  },
   "results": {
     "title": "Des résultats qui parlent d'eux-mêmes",
     "stats": [
@@ -253,5 +264,50 @@
     "followTitle": "Suivez-nous",
     "address": "Casablanca, Maroc",
     "rights": "© 2026 Client Factory. Tous droits réservés."
+  },
+  "webFunnel": {
+    "back": "Retour",
+    "step1": {
+      "badge": "ÉTAPE 1/3",
+      "title": "Pour regarder la vidéo explicative, remplissez le formulaire",
+      "tagline": "L'opportunité ne se présente qu'une fois, saisissez-la.",
+      "fields": {
+        "fullName": "Nom complet",
+        "email": "Email professionnel",
+        "phone": "Numéro de téléphone",
+        "companyName": "Nom de votre entreprise ou de votre projet"
+      },
+      "videoNote": "Assurez-vous que vos informations sont correctes pour bénéficier de votre consultation gratuite.",
+      "submit": "Prêt à regarder la vidéo explicative",
+      "footerNote": "Notre objectif est de vous servir et de vous conseiller."
+    },
+    "step2": {
+      "badge": "ÉTAPE 2/3",
+      "title": "Découvrez comment doubler vos ventes grâce à une présence forte en ligne",
+      "watching": "VISIONNAGE",
+      "locked": "Terminez la vidéo pour continuer",
+      "cta": "Réservez un appel"
+    },
+    "step3": {
+      "badge": "ÉTAPE 3/3",
+      "title": "Choisir une date",
+      "subtitle": "Disponibilités pour les 2 prochaines semaines.",
+      "chooseDatePrompt": "Choisissez une date pour voir les créneaux disponibles.",
+      "confirm": "Confirmer l'appel",
+      "confirming": "Confirmation..."
+    },
+    "step4": {
+      "badge": "RENDEZ-VOUS CONFIRMÉ",
+      "title": "Félicitations ! Votre appel est programmé.",
+      "message": "Nous avons bien reçu votre demande. Nous sommes impatients d'échanger avec vous et de discuter de votre projet de site web.",
+      "notice1": "Le lien de l'appel vous a été envoyé par email et WhatsApp",
+      "notice2": "Pensez à ajouter l'évènement à votre agenda",
+      "backHome": "Retour à l'accueil"
+    },
+    "errors": {
+      "required": "Ce champ est obligatoire",
+      "invalidEmail": "Veuillez saisir une adresse e-mail valide",
+      "invalidPhone": "Veuillez saisir un numéro de téléphone valide"
+    }
   }
 }

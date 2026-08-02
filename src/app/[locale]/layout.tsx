@@ -4,6 +4,7 @@ import { NextIntlClientProvider, hasLocale } from "next-intl";
 import { getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
+import TrackingScripts from "@/components/TrackingScripts";
 import "../globals.css";
 
 const poppins = Poppins({
@@ -43,6 +44,11 @@ export async function generateMetadata({
     icons: {
       icon: "/favicon.png",
     },
+    verification: {
+      other: {
+        "facebook-domain-verification": "5cqps4di75b8dwpb0fjgrq7jzehjdd",
+      },
+    },
   };
 }
 
@@ -70,6 +76,7 @@ export default async function LocaleLayout({
       className={`${poppins.variable} ${inter.variable} ${cairo.variable} h-full antialiased`}
     >
       <body className="min-h-full bg-(--color-navy) text-white">
+        <TrackingScripts />
         <NextIntlClientProvider>{children}</NextIntlClientProvider>
       </body>
     </html>

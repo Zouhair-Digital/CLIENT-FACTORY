@@ -102,6 +102,17 @@
       }
     ]
   },
+  "webService": {
+    "badge": "New Service",
+    "title": "A Website That Converts Your Visitors Into Clients",
+    "subtitle": "Alongside your ad campaigns, we design professional, fast websites optimized for conversion — built to turn every visit into a business opportunity.",
+    "features": [
+      "Custom design aligned with your brand identity",
+      "Optimized for conversion and lead generation",
+      "Fast, responsive, and compatible with every device"
+    ],
+    "cta": "Discover More Details"
+  },
   "results": {
     "title": "Results That Speak for Themselves",
     "stats": [
@@ -253,5 +264,50 @@
     "followTitle": "Follow Us",
     "address": "Casablanca, Morocco",
     "rights": "© 2026 Client Factory. All Rights Reserved."
+  },
+  "webFunnel": {
+    "back": "Back",
+    "step1": {
+      "badge": "STEP 1/3",
+      "title": "Fill Out the Form to Watch the Explainer Video",
+      "tagline": "This opportunity comes once — make it count.",
+      "fields": {
+        "fullName": "Full Name",
+        "email": "Professional Email",
+        "phone": "Phone Number",
+        "companyName": "Your Company or Project Name"
+      },
+      "videoNote": "Make sure your information is correct to receive your free consultation.",
+      "submit": "Ready to Watch the Explainer Video",
+      "footerNote": "Our goal is to serve you and give you real advice."
+    },
+    "step2": {
+      "badge": "STEP 2/3",
+      "title": "Discover How to Double Your Sales With a Strong Online Presence",
+      "watching": "PROGRESS",
+      "locked": "Finish the video to continue",
+      "cta": "Book a Call"
+    },
+    "step3": {
+      "badge": "STEP 3/3",
+      "title": "Choose a Date",
+      "subtitle": "Availability for the next 2 weeks.",
+      "chooseDatePrompt": "Choose a date to see available time slots.",
+      "confirm": "Confirm the Call",
+      "confirming": "Confirming..."
+    },
+    "step4": {
+      "badge": "CALL CONFIRMED",
+      "title": "Congratulations! Your call is scheduled.",
+      "message": "We've received your request. We're looking forward to speaking with you about your website project.",
+      "notice1": "The call link has been sent to you by email and WhatsApp",
+      "notice2": "Don't forget to add the event to your calendar",
+      "backHome": "Back to Homepage"
+    },
+    "errors": {
+      "required": "This field is required",
+      "invalidEmail": "Please enter a valid email address",
+      "invalidPhone": "Please enter a valid phone number"
+    }
   }
 }

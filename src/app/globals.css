@@ -111,6 +111,21 @@ body {
   animation: float-glow 6s ease-in-out infinite;
 }
 
+/* Wistia player loading placeholders */
+wistia-player[media-id="pur57rk2lj"]:not(:defined) {
+  background: center / contain no-repeat url("https://fast.wistia.com/embed/medias/pur57rk2lj/swatch");
+  display: block;
+  filter: blur(5px);
+  padding-top: 56.25%;
+}
+
+wistia-player[media-id="d600t6xojw"]:not(:defined) {
+  background: center / contain no-repeat url("https://fast.wistia.com/embed/medias/d600t6xojw/swatch");
+  display: block;
+  filter: blur(5px);
+  padding-top: 56.25%;
+}
+
 /* Section heading underline accent */
 .heading-accent {
   position: relative;

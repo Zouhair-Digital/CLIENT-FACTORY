@@ -86,7 +86,11 @@ export default function Footer() {
         </div>
 
         <div className="mt-14 border-t border-white/10 pt-8 text-center text-xs text-white/40">
-          {t("rights")}
+          <p>{t("rights")}</p>
+          <p className="mx-auto mt-2 max-w-2xl text-[11px] leading-relaxed text-white/25">
+            This site is not a part of, or endorsed by, Facebook/Meta or Google in any way.
+            FACEBOOK is a trademark of Meta Platforms, Inc. GOOGLE is a trademark of Google LLC.
+          </p>
         </div>
       </div>
     </footer>

@@ -4,6 +4,7 @@ import Hero from "@/components/sections/Hero";
 import Problem from "@/components/sections/Problem";
 import Method from "@/components/sections/Method";
 import WhyUs from "@/components/sections/WhyUs";
+import WebService from "@/components/sections/WebService";
 import Results from "@/components/sections/Results";
 import CaseStudies from "@/components/sections/CaseStudies";
 import ConsultationForm from "@/components/sections/ConsultationForm";
@@ -19,6 +20,7 @@ export default function Home() {
         <Problem />
         <Method />
         <WhyUs />
+        <WebService />
         <Results />
         <CaseStudies />
         <ConsultationForm />
