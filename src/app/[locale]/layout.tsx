@@ -5,6 +5,7 @@ import { getTranslations, setRequestLocale } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
 import TrackingScripts from "@/components/TrackingScripts";
+import MetaPixel, { MetaPixelNoscript } from "@/components/MetaPixel";
 import "../globals.css";
 
 const poppins = Poppins({
@@ -75,7 +76,11 @@ export default async function LocaleLayout({
       dir={dir}
       className={`${poppins.variable} ${inter.variable} ${cairo.variable} h-full antialiased`}
     >
+      <head>
+        <MetaPixel />
+      </head>
       <body className="min-h-full bg-(--color-navy) text-white">
+        <MetaPixelNoscript />
         <TrackingScripts />
         <NextIntlClientProvider>{children}</NextIntlClientProvider>
       </body>
