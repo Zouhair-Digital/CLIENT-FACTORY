@@ -1,6 +1,6 @@
 "use client";
 
-import { useCallback, useMemo, useState } from "react";
+import { useCallback, useEffect, useMemo, useState } from "react";
 import { useTranslations, useLocale } from "next-intl";
 import { motion, AnimatePresence } from "framer-motion";
 import Script from "next/script";
@@ -33,6 +33,25 @@ const INTL_LOCALES: Record<string, string> = {
 
 const EMAIL_REGEX = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 const PHONE_REGEX = /^[+\d][\d\s-]{6,}$/;
+
+const STEP_SLUGS: Record<number, string> = {
+  1: "",
+  2: "/video",
+  3: "/rendez-vous",
+  4: "/confirmation",
+};
+
+function stepFromPathname(pathname: string): number {
+  const match = Object.entries(STEP_SLUGS).find(
+    ([, slug]) => slug !== "" && pathname.endsWith(slug)
+  );
+  return match ? Number(match[0]) : 1;
+}
+
+function trackVirtualPageview(path: string) {
+  window.fbq?.("track", "PageView");
+  window.gtag?.("event", "page_view", { page_path: path });
+}
 
 type LeadData = {
   fullName: string;
@@ -69,6 +88,7 @@ export default function WebsiteFunnel() {
   const Arrow = isRtl ? ArrowLeft : ArrowRight;
   const BackArrow = isRtl ? ArrowRight : ArrowLeft;
   const intlLocale = INTL_LOCALES[locale] ?? "fr-FR";
+  const basePath = `/${locale}/sites-web`;
 
   const [step, setStep] = useState(1);
   const [lead, setLead] = useState<LeadData>(INITIAL_LEAD);
@@ -87,6 +107,35 @@ export default function WebsiteFunnel() {
     el.addEventListener("percent-watched-change", ((e: CustomEvent<{ percentWatched: number }>) => {
       setVideoProgress((prev) => Math.max(prev, Math.round(e.detail.percentWatched * 100)));
     }) as EventListener);
+  }, []);
+
+  const goToStep = useCallback(
+    (nextStep: number) => {
+      setStep(nextStep);
+      const path = `${basePath}${STEP_SLUGS[nextStep]}`;
+      if (window.location.pathname !== path) {
+        window.history.pushState({ funnelStep: nextStep }, "", path);
+      }
+      trackVirtualPageview(path);
+    },
+    [basePath]
+  );
+
+  // Give step 1's initial load a history entry so the browser back button
+  // can return to it from later steps, and keep the URL in sync when the
+  // user uses the browser's own back/forward buttons.
+  useEffect(() => {
+    window.history.replaceState({ funnelStep: 1 }, "", window.location.pathname);
+
+    function handlePopState(e: PopStateEvent) {
+      const stepFromState = (e.state as { funnelStep?: number } | null)?.funnelStep;
+      const nextStep = stepFromState ?? stepFromPathname(window.location.pathname);
+      setStep(nextStep);
+      trackVirtualPageview(window.location.pathname);
+    }
+
+    window.addEventListener("popstate", handlePopState);
+    return () => window.removeEventListener("popstate", handlePopState);
   }, []);
 
   function updateLead<K extends keyof LeadData>(key: K, value: LeadData[K]) {
@@ -124,7 +173,7 @@ export default function WebsiteFunnel() {
       console.error("Lead submission error:", error);
     } finally {
       setIsSubmittingLead(false);
-      setStep(2);
+      goToStep(2);
     }
   }
 
@@ -152,7 +201,7 @@ export default function WebsiteFunnel() {
       console.error("Booking submission error:", error);
     } finally {
       setIsConfirming(false);
-      setStep(4);
+      goToStep(4);
     }
   }
 
@@ -296,7 +345,7 @@ export default function WebsiteFunnel() {
 
                 <button
                   type="button"
-                  onClick={() => videoUnlocked && setStep(3)}
+                  onClick={() => videoUnlocked && goToStep(3)}
                   disabled={!videoUnlocked}
                   className={`mt-4 flex w-full items-center justify-center gap-2 rounded-full px-7 py-4 text-sm font-semibold transition-all ${
                     videoUnlocked
@@ -310,7 +359,7 @@ export default function WebsiteFunnel() {
 
                 <button
                   type="button"
-                  onClick={() => setStep(1)}
+                  onClick={() => goToStep(1)}
                   className="mx-auto mt-5 flex items-center gap-1.5 text-xs font-medium text-white/40 transition-colors hover:text-white/70"
                 >
                   <BackArrow className="h-3.5 w-3.5" />
@@ -418,7 +467,7 @@ export default function WebsiteFunnel() {
 
                 <button
                   type="button"
-                  onClick={() => setStep(2)}
+                  onClick={() => goToStep(2)}
                   className="mx-auto mt-5 flex items-center gap-1.5 text-xs font-medium text-white/40 transition-colors hover:text-white/70"
                 >
                   <BackArrow className="h-3.5 w-3.5" />
