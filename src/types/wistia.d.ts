@@ -6,6 +6,7 @@ declare global {
       "wistia-player": DetailedHTMLProps<HTMLAttributes<HTMLElement>, HTMLElement> & {
         "media-id": string;
         aspect?: string | number;
+        "play-bar-control"?: string;
       };
     }
   }

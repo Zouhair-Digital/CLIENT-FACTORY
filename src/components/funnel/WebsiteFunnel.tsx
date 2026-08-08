@@ -245,7 +245,11 @@ export default function WebsiteFunnel() {
                 <p className="mt-3 text-sm text-white/60 sm:text-base">{t("step1.tagline")}</p>
 
                 <div className="mt-6 overflow-hidden rounded-2xl border border-white/10">
-                  <wistia-player media-id={WISTIA_STEP1_MEDIA_ID} aspect={16 / 9} />
+                  <wistia-player
+                    media-id={WISTIA_STEP1_MEDIA_ID}
+                    aspect={16 / 9}
+                    play-bar-control="false"
+                  />
                 </div>
 
                 <p className="mt-3 text-center text-xs text-white/40">{t("step1.videoNote")}</p>
@@ -320,7 +324,12 @@ export default function WebsiteFunnel() {
                 </h1>
 
                 <div className="mt-6 overflow-hidden rounded-2xl border border-white/10">
-                  <wistia-player ref={attachStep2Video} media-id={WISTIA_STEP2_MEDIA_ID} aspect={16 / 9} />
+                  <wistia-player
+                    ref={attachStep2Video}
+                    media-id={WISTIA_STEP2_MEDIA_ID}
+                    aspect={16 / 9}
+                    play-bar-control="false"
+                  />
                 </div>
 
                 <div className="mt-5">
